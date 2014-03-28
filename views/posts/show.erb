@@ -1,2 +1,6 @@
 <h1><%= @post.title %></h1>
 <p><%= @post.body %></p>
+<a href="/posts/<%= @post.id %>/edit">
+  <button class="btn btn-primary">Edit Post</button>
+</a>
+<%= delete_post_button(@post.id) %>
